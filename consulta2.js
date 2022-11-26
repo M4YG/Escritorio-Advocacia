@@ -1,4 +1,4 @@
-var dataRef = new Firebase('https://marcos-5491e-default-rtdb.firebaseio.com/escritorio_de_advocacia');
+var dataRef = new Firebase('https://marcos-5491e-default-rtdb.firebaseio.com/escritorio_de_advocacia/salas');
 
 dataRef.on('value', function(snapshot) {
 
@@ -11,16 +11,16 @@ dataRef.on('value', function(snapshot) {
         console.log('chave', key);
         console.log('valor', valor);
 
-        if(key === 'salas') {
+        if(key === 'funcionario') {
 
             var _itemsKey = Object.entries(valor);
     
-            count++;
     
     
             for (const [key2, value2] of _itemsKey) {
-    
-                $("#tbsalas tbody").append(
+                count++;
+                
+                $("#tbfuncionarios tbody").append(
     
                     `<tr> +
     
@@ -32,7 +32,7 @@ dataRef.on('value', function(snapshot) {
     
                         <td>${value2.email}</td> +
 
-                        <td>${value2.endereco}</td> +
+                        <td>${value2.cpf}</td> +
     
                     </tr>`
     

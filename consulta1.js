@@ -15,11 +15,11 @@ dataRef.on('value', function(snapshot) {
 
             var _itemsKey = Object.entries(valor);
     
-            count++;
     
     
             for (const [key2, value2] of _itemsKey) {
-    
+                count++;
+                
                 $("#tbclientes tbody").append(
     
                     `<tr> +
@@ -32,7 +32,7 @@ dataRef.on('value', function(snapshot) {
     
                         <td>${value2.email}</td> +
 
-                        <td>${value2.endereco}</td> +
+                        <td>${value2.cpf}</td> +
     
                     </tr>`
     
