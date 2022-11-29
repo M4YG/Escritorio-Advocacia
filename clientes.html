@@ -43,15 +43,15 @@
 
     <body>
        <a href="index.html"> <img class="luskent" src="logo_empresa.png" width="70px"> </a>
-        <h4 class="h4-text text-center"> Database Escritório de Advocacia </h4>
-        <h5 class="h5-text text-center"> Clientes </h5>
+        <h3 class="Lusking text-center"> Lusking Enterprises </h3>
+        <h5 class="cliente-name text-center"> Clientes </h5>
     <div class="buttons-htmls">
-        <a href="clientes.html"> <button class="clients-button"> Clientes </button>
-        <a href="Funcionarios.html"> <button class="employees"> Funcionários</button>
+        <a href="clientes.html"> <button class="clients-button"> Clientes </button> </a>
+        <a href="Funcionarios.html"> <button class="employees"> Funcionários</button> </a>
     </div>
         <table id="tbclientes" class="table table-striped table-hover table-bordered table-dark table-responsive">
             <tr>
-                <th>ID</th>
+                <th scope="row">ID</th>
                 <th>Nome</th>
                 <th>Telefone</th>
                 <th>Email</th>
@@ -60,21 +60,28 @@
         </table>
     </body>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+        
         body {
             background-color:  #1f1f24;
         }
-        .h4-text {
+        .Lusking {
+            font-family: Syne Mono;
             color: #34f1c0;
-            margin-top: 3px;
+            margin-top: 5px;
         }
-        .h5-text {
+        .cliente-name {
+            font-family: Lora;
+            font-size: 23px;
             color: #34f1c0;
-            margin-top: 10px;
+            margin-top: 5px;
         }
         table {
             margin-top: 10px;
         }
         .luskent {
+            padding-top: 8px;
             margin: auto;
             display: block;
         }
@@ -93,7 +100,7 @@
             color: #34f1c0;
             font-weight: bold;
             border: none;
-            padding: 12px 27px;
+            padding: 10px 24px;
             border-radius: 22px;
             cursor: pointer;
         }
@@ -102,7 +109,7 @@
             color: #34f1c0;
             font-weight: bold;
             border: none;
-            padding: 12px 27px;
+            padding: 10px 24px;
             border-radius: 22px;
             margin-left: 15px;
             cursor: pointer;
